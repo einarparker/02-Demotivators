@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,300;1,400&family=Bebas+Neue&family=Oswald:wght@200;400;600;700&display=swap");
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --font: Oswald;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#factorywrap {
+  width: 80vw;
+  flex-direction: row;
+}
+#jokeFactory {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 2em;
+
+  letter-spacing: 0.115em;
+
+  color: #5e5e5e;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  height: 90vh;
+  width: 90vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #c4c4c4;
+  border-radius: 32px;
+}
+
+.sky {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 90vh;
+  width: 90vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #c4c4c4;
+  border-radius: 32px;
+}
+#topLayer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  min-width: 200px;
+  height: 90%;
+  width: 80%;
+}
+.honewrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+h1 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5em;
+  line-height: 120px;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h3 {
+  font-family: var(--font);
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  margin: 1px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.buttonWrap {
+  height: 30%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  z-index: 99;
+}
+
+button {
+  min-width: 150px;
+  height: 80px;
+  margin: 20px 10px;
+  text-align: center;
+  line-height: 76px;
+  padding: 5px 10px;
+  border-style: none;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  color: #5e5e5e;
+  background: #c4c4c4;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.21),
+    -4px -4px 10px rgba(255, 255, 255, 0.47);
+  border: 1px solid rgba(243, 243, 243, 0.637);
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.21),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.47);
+  border: none;
+  text-shadow: 2px 2px 4px #797979;
+  border: 1px solid rgba(221, 221, 221, 0.637);
+  transform: translateY(3px);
+}
+.btn:active {
+  transform: translateY(7px);
+  color: #5e5e5e;
+}
+/* Demot Page */
+.quote {
+  font-family: var(--font);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2em;
+  color: #ececec;
+}
+#author {
+  font-weight: 200;
+}
+.demot_wrapper {
+  background-color: rgba(28, 53, 77, 0.623);
+  text-align: left;
+  border: solid rgb(240, 240, 240);
+  box-shadow: 3px 3px 5px#a3a3a3;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 30vw;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.demotButtonWrap {
+  height: 30vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  z-index: 99;
+}
+
+@media (max-width: 576px) {
+  button {
+    min-width: 111px;
+    height: 58px;
+    margin: 20px 10px;
+    text-align: center;
+    line-height: 52px;
+    padding: 5px 5px;
+    font-size: 2em;
+  }
+  .buttonWrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: flex-start;
+  }
+  h1 {
+    font-size: 3em;
+    line-height: 60px;
+    text-align: center;
+  }
+  .honewrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 75px;
+  }
+  #topLayer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 90%;
+    width: 80%;
+  }
+  #factorywrap {
+    width: 80vw;
+    flex-direction: row;
+  }
+  .demot_wrapper {
+    height: 46vh;
+    width: 40vw;
+    align-content: space-between;
+  }
+
+  .demotButtonWrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #quote {
+    font-size: 1.2em;
+    line-height: 1.1em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+  }
+  #author {
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 100;
+  }
+  #quotation,
+  #punchLine {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+  }
+  button {
+    transition-delay: 100ms;
+  }
+}
+
+@media (min-width: 576px) {
+  button {
+    min-width: 111px;
+    height: 58px;
+    margin: 20px 10px;
+    text-align: center;
+    line-height: 52px;
+    padding: 5px 5px;
+    font-size: 2em;
+  }
+  .buttonWrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: flex-start;
+  }
+  h1 {
+    font-size: 3em;
+    line-height: 60px;
+    text-align: center;
+  }
+  .honewrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 75px;
+  }
+  #topLayer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 90%;
+    width: 80%;
+  }
+  #factorywrap {
+    width: 80vw;
+    flex-direction: row;
+  }
+  .demot_wrapper {
+    height: 46vh;
+    width: 40vw;
+    align-content: space-between;
+  }
+
+  .demotButtonWrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #quote {
+    font-size: 1.4em;
+    line-height: 1.1em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+  }
+  #author {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    font-weight: 100;
+  }
+  #quotation,
+  #punchLine {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+  }
+  button {
+    transition-delay: 100ms;
+  }
+}
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    height: 65px;
+    margin: 20px 10px;
+    text-align: center;
+    line-height: 59px;
+    padding: 5px 5px;
+    font-size: 2.3em;
+  }
+  .buttonWrap {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  #quote {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+  }
+  #author {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+  }
+  #quotation,
+  #punchLine {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+  }
+  button {
+    transition-delay: 100ms;
+  }
+}
+@media (min-width: 992px) {
+  button {
+    min-width: 130px;
+    height: 65px;
+    margin: 20px 10px;
+    text-align: center;
+    line-height: 59px;
+    padding: 5px 10px;
+    font-size: 2.7em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+
+  #quote {
+    font-size: 1.8em;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+  #author {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+  }
+  #quotation,
+  #punchLine {
+    font-size: 1.8em;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+  .buttonWrap {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  button {
+    min-width: 150px;
+    height: 80px;
+    margin: 20px 10px;
+    text-align: center;
+    line-height: 76px;
+    padding: 5px 10px;
+    font-size: 3em;
+  }
+  .buttonWrap {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+  #page_name {
+    font-size: 2.5em;
+  }
+
+  #quote {
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+  #author {
+    font-size: 1.8em;
+    line-height: 1em;
+    font-weight: 300;
+  }
+  #quotation,
+  #punchLine {
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1400px) {
+  .buttonWrap {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 2300px) {
+  h1 {
+    font-size: 6em;
+  }
+  button {
+    min-width: 230px;
+    height: 90px;
+    margin: 20px 10px;
+    text-align: center;
+    line-height: 86px;
+    padding: 5px 10px;
+    font-size: 3.8em;
+  }
+}
